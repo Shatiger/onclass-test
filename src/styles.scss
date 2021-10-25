@@ -1,6 +1,11 @@
 @import './reset.scss';
 @import '../node_modules/normalize.css/normalize.css';
+@import './assets/styles/mixins.scss';
+
+@include setFont('SF Pro Display', 'SFProDisplay-Medium', 500, 'normal');
+@include setFont('SF Pro Display', 'SFProDisplay-Regular', 400, 'normal');
 
 body {
     background-color: #f7f7f7;
+    font-family: 'SF Pro Display', sans-serif;
 }
