@@ -10,6 +10,18 @@ const routes: Routes = [
   {
     path: 'tasks',
     loadChildren: () => import('./pages/tasks/tasks.module').then(m => m.TasksModule)
+  },
+  {
+    path: 'teachers',
+    redirectTo: '/tasks',
+  },
+  {
+    path: 'classes',
+    redirectTo: '/tasks',
+  },
+  {
+    path: 'game',
+    redirectTo: '/tasks',
   }
 ];
 

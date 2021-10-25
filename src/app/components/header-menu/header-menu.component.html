@@ -1,0 +1,23 @@
+<nav class="header-menu">
+  <ul class="header-menu__list">
+    <li
+      *ngFor="let item of items"
+      class="header-menu__list-item"
+    >
+      <div
+        [routerLink]="item.path"
+        routerLinkActive="active"
+        #rla="routerLinkActive"
+        class="header-menu__list-item-icon"
+        [ngStyle]="{
+          'background-image': 'url(assets/icons/' + item.icon + (rla.isActive ? '_active' : '') + '.svg)'
+        }"
+      ></div>
+      <a
+        [routerLink]="item.path"
+        routerLinkActive="active"
+        class="header-menu__list-item-link"
+      >{{ item.name | translate }}</a>
+    </li>
+  </ul>
+</nav>
