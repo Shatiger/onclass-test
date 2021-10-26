@@ -1,0 +1,28 @@
+<div class="header-profile">
+  <div
+    class="header-profile__image"
+    [ngStyle]="{
+      'background-image': 'url(assets/images/profile.png)'
+    }"
+  ></div>
+  <div class="header-profile__notifications">
+    <div class="header-profile__notification-container">
+      <div
+        class="header-profile__notification-icon"
+        [ngStyle]="{
+          'background-image': 'url(assets/icons/notification.svg)'
+        }"
+      ></div>
+      <div *ngIf="notificationsCount > 0" class="header-profile__notification-count">{{notificationsCount}}</div>
+    </div>
+    <div class="header-profile__notification-container">
+      <div
+        class="header-profile__notification-icon"
+        [ngStyle]="{
+          'background-image': 'url(assets/icons/feedback.svg)'
+        }"
+      ></div>
+      <div *ngIf="feedbackCount > 0" class="header-profile__notification-count">{{feedbackCount}}</div>
+    </div>
+  </div>
+</div>

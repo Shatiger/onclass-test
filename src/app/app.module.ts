@@ -8,6 +8,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
+import { HeaderProfileComponent } from './components/header-profile/header-profile.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -17,7 +18,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     HeaderComponent,
-    HeaderMenuComponent
+    HeaderMenuComponent,
+    HeaderProfileComponent
   ],
   imports: [
     HttpClientModule,
