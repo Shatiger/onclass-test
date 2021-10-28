@@ -18,3 +18,15 @@
     </div>
   </div>
 </div>
+<div class="task-description" [ngSwitch]="currentTab">
+  <p *ngSwitchCase="detailsTab" class="task-description__text">
+    {{ task.description }}
+  </p>
+  <p *ngSwitchCase="containsTab" class="task-description__text">
+    {{ task.contains }}
+  </p>
+  <p *ngSwitchCase="exercisesTab" class="task-description__text">
+    {{ task.exercises }}
+  </p>
+  <p *ngSwitchDefault class="task-description__text"></p>
+</div>

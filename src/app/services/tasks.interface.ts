@@ -13,6 +13,8 @@ export interface Task {
     title: string;
     sub_title: string;
     description: string;
+    contains: string;
+    exercises: string;
     created_at: Date;
     published_at: Date;
     level: string;

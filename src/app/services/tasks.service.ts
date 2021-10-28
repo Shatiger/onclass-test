@@ -20,7 +20,9 @@ export class TasksService {
         ...task,
         created_at: new Date(task.created_at),
         published_at: new Date(task.published_at),
-        level: this.translateService.instant('i18n.MIDDLE_LEVEL')
+        level: this.translateService.instant('i18n.MIDDLE_LEVEL'),
+        contains: 'This string contains some words',
+        exercises: 'This string contains exercises'
       }))
     );
   }

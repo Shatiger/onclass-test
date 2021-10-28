@@ -12,4 +12,8 @@ export class TaskDetailsComponent {
   task!: Task;
 
   currentTab = Tab.Details;
+
+  detailsTab = Tab.Details;
+  containsTab = Tab.Contains;
+  exercisesTab = Tab.Exercises;
 }
