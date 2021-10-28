@@ -5,8 +5,4 @@
   <ng-container *ngIf="comments$ | async as comments">
     <app-comments [comments]="comments"></app-comments>
   </ng-container>
-  
-  <p >
-    {{ task | json }}
-  </p>
 </article>
