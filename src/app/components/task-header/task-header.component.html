@@ -1,0 +1,24 @@
+<div class="task-author">
+  <div class="task-author__pic">
+    <picture>
+      <source srcset="{{author.userpic.smX2.url}} 2x" type="image/jpeg" />
+      <img
+        [src]="author.userpic.smX2.url"
+        [alt]="author.first_name + ' ' + author.last_name"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+  <div class="task-author__descr">
+    <div class="task-author__name">{{author.first_name + ' ' + author.last_name}}</div>
+    <div class="task-author__date">{{publishedAt | date: 'dd.MM.y hh:mm a' | lowercase}}</div>
+  </div>
+</div>
+<div class="task-menu">
+  <div class="task-menu__fav">
+    <img src="assets/icons/fav.svg" alt="To favorites">
+  </div>
+  <div class="task-menu__dots">
+    <img src="assets/icons/dots.svg" alt="Menu">
+  </div>
+</div>

@@ -1,0 +1,59 @@
+:host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-author {
+    display: flex;
+}
+
+.task-author__pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.task-author__name {
+    font-size: 14px;
+    color: #0c6495;
+    font-weight: bold;
+}
+
+.task-author__date {
+    font-size: 14px;
+    color: #999999;
+}
+
+.task-menu {
+    display: flex;
+    align-items: center;
+}
+
+.task-menu__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.task-menu__fav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.task-menu__fav:hover,
+.task-menu__dots:hover {
+    background-color: #5AB3E420;
+}
