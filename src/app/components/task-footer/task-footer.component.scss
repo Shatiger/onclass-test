@@ -1,0 +1,48 @@
+:host {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    height: 60px;
+    padding: 0 20px;
+
+    font-size: 14px;
+    color: #a9adb7;
+
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.stat-likes,
+.stat-comments,
+.stat-reposts,
+.stat-rating,
+.stat-views {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+    img {
+        margin-right: 8px;
+    }
+}
+
+.stat-rating {
+    color: #e7d878;
+
+    img {
+        margin-right: 12px;
+    }
+}
+
+.stat-views {
+    margin-right: 0;
+    color: #5ab3e4;
+
+    img {
+        margin-right: 12px;
+    }
+}
+
+.stat-gap {
+    flex-grow: 1;
+}

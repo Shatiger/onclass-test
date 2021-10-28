@@ -1,6 +1,7 @@
 <article *ngIf="task$ | async as task">
   <app-task-header [author]="task.author" [publishedAt]="task.published_at"></app-task-header>
   <app-task-details [task]="task"></app-task-details>
+  <app-task-footer [task]="task"></app-task-footer>
   <p >
     {{ task | json }}
   </p>
