@@ -1,0 +1,65 @@
+:host {
+    display: block;
+    margin-top: 20px;
+}
+
+.task-cover {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-cover__pic {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.task-cover__info {
+    flex-grow: 1;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.task-cover__info-lesson {
+    color: #5ab3e4;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.task-cover__info-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e252b;
+}
+
+.task-cover__info-subtitle {
+    font-size: 18px;
+    font-weight: normal;
+    color: #181c2f;
+}
+
+.task-cover__info-level {
+    font-size: 12px;
+    color: #5f6d7a;
+    margin-top: 10px;
+}
+
+.task-cover__info-tabs-container {
+    display: flex;
+    padding: 0 28px;
+    justify-content: space-between;
+}
+
+.task-cover__start {
+    font-size: 12px;
+    color: white;
+    background: #87d37c;
+    border: 0px;
+    border-radius: 10px;
+    height: 26px;
+    padding: 0 28px;
+    margin-left: 26px;
+    cursor: pointer;
+}

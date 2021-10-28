@@ -2,5 +2,13 @@
     "i18n.PAGES.TASKS": "Уроки",
     "i18n.PAGES.TEACHERS": "Преподаватели",
     "i18n.PAGES.CLASSES": "Классы",
-    "i18n.PAGES.GAME": "Игра"
+    "i18n.PAGES.GAME": "Игра",
+    
+    "i18n.TASK": "Урок",
+    "i18n.TASK.ABOUT": "Об уроке",
+    "i18n.TASK.CONTAINS": "Содержание",
+    "i18n.TASK.EXERCISES": "Упражнения",
+    "i18n.TASK.START": "Начать урок",
+
+    "i18n.MIDDLE_LEVEL": "Средний уровень"
 }

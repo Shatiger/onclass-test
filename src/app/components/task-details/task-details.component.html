@@ -1,0 +1,20 @@
+<div class="task-cover">
+  <div class="task-cover__pic">
+    <img src="assets/images/bg.png" [alt]="task.title">
+  </div>
+  <div class="task-cover__info">
+    <div class="task-cover__info-header">
+      <p class="task-cover__info-lesson">{{ 'i18n.TASK' | translate }}</p>
+      <h1 class="task-cover__info-title">{{ task.title }}</h1>
+      <h2 class="task-cover__info-subtitle">{{ task.sub_title }}</h2>
+      <p class="task-cover__info-level">{{ task.level }}</p>
+    </div>
+    <div class="task-cover__info-tabs-container">
+      <app-task-tabs
+        [currentTab]="currentTab"
+        (onSwitch)="currentTab = $event"
+      ></app-task-tabs>
+      <button class="task-cover__start" type="button">{{ 'i18n.TASK.START' | translate }}</button>
+    </div>
+  </div>
+</div>

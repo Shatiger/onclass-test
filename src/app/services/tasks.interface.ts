@@ -15,6 +15,7 @@ export interface Task {
     description: string;
     created_at: Date;
     published_at: Date;
+    level: string;
     author: Author;
     stats: {
         comments_count: number;
