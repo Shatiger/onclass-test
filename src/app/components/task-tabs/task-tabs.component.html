@@ -1,0 +1,17 @@
+<div
+  class="tab-about"
+  [class.active]="currentTab === detailsTab"
+  (click)="activateTab(detailsTab)"
+>{{ 'i18n.TASK.ABOUT' | translate }}</div>
+
+<div
+  class="tab-contains"
+  [class.active]="currentTab === containsTab"
+  (click)="activateTab(containsTab)"
+>{{ 'i18n.TASK.CONTAINS' | translate }}</div>
+
+<div
+  class="tab-exercises"
+  [class.active]="currentTab === exercisesTab"
+  (click)="activateTab(exercisesTab)"
+>{{ 'i18n.TASK.EXERCISES' | translate }}</div>

@@ -1,0 +1,23 @@
+:host {
+    display: flex;
+    flex-grow: 1;
+    padding-top: 2px;
+    color: #5f6d7a;
+    cursor: pointer;
+}
+
+.tab-about,
+.tab-contains,
+.tab-exercises {
+    flex-grow: 1;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.active {
+    color: #41a1d9;
+    font-weight: bold;
+    border-bottom: 2px solid #5ab3e4;
+}
