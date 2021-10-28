@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Comment } from 'src/app/services/comments.interface';
+import { CommentsService } from 'src/app/services/comments.service';
 import { Task } from 'src/app/services/tasks.interface';
 import { TasksService } from 'src/app/services/tasks.service';
 
@@ -10,8 +12,13 @@ import { TasksService } from 'src/app/services/tasks.service';
 })
 export class TasksComponent {
   task$: Observable<Task>;
+  comments$: Observable<Comment[]>;
 
-  constructor(public tasksService: TasksService) {
-    this.task$ = tasksService.getTask$();
+  constructor(
+    private tasksService: TasksService,
+    private commentsService: CommentsService
+  ) {
+    this.task$ = this.tasksService.getTask$();
+    this.comments$ = this.commentsService.getComments$();
   }
 }

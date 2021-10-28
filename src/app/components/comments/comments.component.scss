@@ -1,0 +1,44 @@
+.comment {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #eeeeee;
+    padding: 12px 0;
+
+    font-size: 14px;
+}
+
+.comment__pic {
+    margin-top: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.comment__container {
+    margin-left: 10px;
+}
+
+.comment__author {
+    color: #0c6495;
+    font-weight: bold;
+}
+
+.comment__text {
+    color: #181c2f;
+}
+
+.comment__date {
+    color: #999999;
+}
+
+.load-comments {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.load-comments__button {
+    color: #41a1d9;
+    font-size: 14px;
+    cursor: pointer;
+}

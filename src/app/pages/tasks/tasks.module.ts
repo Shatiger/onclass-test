@@ -6,6 +6,7 @@ import { TasksService } from 'src/app/services/tasks.service';
 import { TaskHeaderModule } from 'src/app/components/task-header/task-header.module';
 import { TaskDetailsModule } from 'src/app/components/task-details/task-details.module';
 import { TaskFooterModule } from 'src/app/components/task-footer/task-footer.module';
+import { CommentsModule } from 'src/app/components/comments/comments.module';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { TaskFooterModule } from 'src/app/components/task-footer/task-footer.mod
     TasksRoutingModule,
     TaskHeaderModule,
     TaskDetailsModule,
-    TaskFooterModule
+    TaskFooterModule,
+    CommentsModule
   ],
   declarations: [TasksComponent],
   providers: [TasksService]

@@ -2,6 +2,10 @@
   <app-task-header [author]="task.author" [publishedAt]="task.published_at"></app-task-header>
   <app-task-details [task]="task"></app-task-details>
   <app-task-footer [task]="task"></app-task-footer>
+  <ng-container *ngIf="comments$ | async as comments">
+    <app-comments [comments]="comments"></app-comments>
+  </ng-container>
+  
   <p >
     {{ task | json }}
   </p>

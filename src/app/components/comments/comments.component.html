@@ -1,0 +1,20 @@
+<div class="comment" *ngFor="let comment of comments">
+  <div class="comment__pic">
+    <picture>
+      <source srcset="{{comment.author.userpic.smX2.url}} 2x" type="image/jpeg" />
+      <img
+        [src]="comment.author.userpic.smX2.url"
+        [alt]="comment.author.first_name + ' ' + comment.author.last_name"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+  <div class="comment__container">
+    <span class="comment__author">{{ comment.author.first_name + ' ' + comment.author.last_name }}</span>
+    <p class="comment__text">{{ comment.text }}</p>
+    <span class="comment__date">{{ comment.published_at | date: 'dd.MM.y hh:mm a' | lowercase }}</span>
+  </div>
+</div>
+<div class="load-comments">
+  <div class="load-comments__button">{{ 'i18n.COMMENT.LOAD' | translate }}</div>
+</div>
