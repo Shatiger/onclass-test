@@ -18,3 +18,24 @@
 <div class="load-comments">
   <div class="load-comments__button">{{ 'i18n.COMMENT.LOAD' | translate }}</div>
 </div>
+<form #myForm="ngForm" novalidate (ngSubmit)="onSubmit(myForm)" class="comment-form">
+  <div class="comment-form__window">
+    <div class="comment-form__attach" (click)="imageInput.click()" [class.attached]="attachment">
+      <input
+        #imageInput
+        hidden
+        [multiple]="false"
+        (change)="fileListener($event)"
+        type="file"
+        name="attach"
+        ngModel
+        accept="image/jpeg,image/png,image/gif,image/bmp"
+      />
+      <img src="assets/icons/attachment.svg" alt="Attachment">
+    </div>
+    <div class="comment-form__text">
+      <input name="text" ngModel type="text" placeholder="{{ 'i18n.COMMENT.PLACEHOLDER' | translate }}" class="comment-form__text-field">
+    </div>
+  </div>
+  <button class="comment-form__button" type="submit"></button>
+</form>
